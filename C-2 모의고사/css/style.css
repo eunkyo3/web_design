@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #222328;
+}
+
+.cf::before, cf::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+ul, li {list-style: none;}
+a {text-decoration: none;}
+
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#aside {
+    float: left;
+    width: 200px;
+    height: 650px;
+}
+
+#contents {
+    float: left;
+    width: 800px;
+    height: 650px;
+}
+
+#aside .hlogo {
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+}
+
+#nav {
+    width: 180px;
+    height: 550px;
+    margin: 0 auto;
+}
+
+#nav > ul > li {
+    border: 1px solid #000;
+    border-bottom: none;
+}
+
+#nav > ul > li:last-child {
+    border-bottom: 1px solid #000;
+}
+
+#nav li {
+    text-align: center;
+}
+
+#nav li a {
+    display: block;
+    padding: 10px;
+}
+
+#nav li:hover > a {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+#nav li ul.submenu {
+    display: none;
+}
+
+#slide {
+    width: 800px;
+    height: 350px;
+    /* overflow: hidden; */
+
+}
+
+#slide .slideList {
+    width: 800px;
+    height: 250px;
+    position: relative;
+}
+
+#slide .slideList .slideImg {
+    position: relative;
+}
+
+#slide .slideList .slideImg p {
+    position: absolute;
+}
+
+#slide .slideList .slideImg p.txt1 {
+    text-align: left;
+    font-size: 30px;
+    top: 120px;
+    left: 40px;
+    background: transparent; /* 이미지 위에는 이거 아니면 none */
+    
+}
