@@ -182,3 +182,78 @@ a {
     width: 100%;
     height: 100%;
 }
+
+#footer {
+    width: 100%;
+    height: 100px;
+}
+
+#footer > div {
+    float: left;
+    height: 100px;
+}
+
+#footer .flogo {
+    width: 200px;
+    line-height: 100px;
+}
+
+#footer .copy {
+    width: 800px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#footer .sns{
+    width: 200px;
+    line-height: 100px;
+    text-align: right;
+}
+
+.layer_bg {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 90;
+}
+
+.layer {
+    display: none;
+    width: 500px;
+    height: 420px;
+    background-color: #fff;
+    border: 2px solid #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.layer h2 {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.layer p {
+    padding: 20px 10px;
+    text-decoration: underline;
+}
+
+.layer a.close {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: solid 1px #000;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.layer a.close span {
+    color: red;
+    font-weight: bold;
+}
