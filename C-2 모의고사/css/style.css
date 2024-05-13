@@ -3,17 +3,18 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    color: #222328;
+    background-color: #ffffff;
+    color: #222382;
 }
 
-.cf::before, cf::after {
+.cf::before, .cf::after {
     display: block;
     content: '';
     clear: both;
 }
 
 ul, li {list-style: none;}
+
 a {text-decoration: none;}
 
 #wrap {
@@ -26,7 +27,6 @@ a {text-decoration: none;}
     width: 200px;
     height: 650px;
 }
-
 #contents {
     float: left;
     width: 800px;
@@ -75,13 +75,12 @@ a {text-decoration: none;}
 #slide {
     width: 800px;
     height: 350px;
-    /* overflow: hidden; */
-
+    overflow: hidden;
 }
 
 #slide .slideList {
     width: 800px;
-    height: 250px;
+    height: 350px;
     position: relative;
 }
 
@@ -89,7 +88,7 @@ a {text-decoration: none;}
     position: relative;
 }
 
-#slide .slideList .slideImg p {
+#slide .slideList .slideImg p{
     position: absolute;
 }
 
@@ -98,6 +97,237 @@ a {text-decoration: none;}
     font-size: 30px;
     top: 120px;
     left: 40px;
-    background: transparent; /* 이미지 위에는 이거 아니면 none */
-    
+    background: transparent;
+    color : antiquewhite
+}
+
+#slide .slideList .slideImg p.txt1 span{
+    background: saddlebrown;
+    color: yellow;
+}
+
+#slide .slideList .slideImg p.txt1 b {
+    background: transparent;
+    font-weight: normal;
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+#slide .slideList .slideImg p.txt2 {
+    text-align: left;
+    font-size: 30px;
+    bottom: 50px;
+    right: 40px;
+    background: transparent;
+    color : blanchedalmond;
+}
+
+#slide .slideList .slideImg p.txt2 span{
+    background: wheat;
+    color: tomato;
+}
+
+#slide .slideList .slideImg p.txt2 b {
+    background: transparent;
+    font-weight: normal;
+    text-decoration: underline;
+    color: salmon;
+}
+
+#slide .slideList .slideImg p.txt3 {
+    text-align: left;
+    font-size: 30px;
+    bottom: 75px;
+    right: 50px;
+    background: transparent;
+    color : salmon;
+}
+
+#slide .slideList .slideImg p.txt3 span{
+    background: seagreen;
+    color: plum;
+}
+
+#slide .slideList .slideImg p.txt3 b {
+    background: transparent;
+    font-weight: normal;
+    text-decoration: underline;
+    color: turquoise;
+}
+
+#slide .slideList .slideImg img {
+    display: block;
+}
+
+/* content : notice, gallary, shortcut */
+#content {
+    width: 800px;
+    height: 200px;
+}
+
+#content > div {
+    float: left;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+#content div.notice, #content div.gallery {
+    width: 300px;
+}
+
+#content div.gallery img {
+    width: 80px;
+    padding-top: 30px;
+}
+
+#content div.shortcut {
+    width: 200px;
+    position: relative;
+    cursor: pointer;
+}
+
+#content div.shortcut img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.scaleBox {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.scaleBox .btn {
+    display: block;
+    margin-bottom: -1px;
+}
+
+.scaleBox .cont {
+    border: 1px solid #000;
+    height: 149px;
+}
+
+.scaleBox .btn a {
+    display: inline-block;
+    text-align: center;
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+
+.notice .cont a span.txt {
+    display: block;
+    float: left;
+    width: 189px;
+    padding: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid #000;
+}
+
+.notice .cont a span.date {
+    float: right;
+    padding: 4px;
+    border-bottom: 1px solid #000;
+}
+
+.notice .cont a:last-child span {
+    border-bottom: none;
+}
+
+.gallery .cont {
+    text-align: center;
+}
+
+.shortcut p {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 5px 0;
+    background: rgba(255, 255, 255, 0.3);
+    color: coral;
+    z-index: 50;
+    text-align: center;
+}
+
+#footer {
+    width: 800px;
+    height: 100px;
+    text-align: center;
+}
+
+#footer > div {
+    float: left;
+}
+
+#footer div.copy {
+    width: 600px;
+    padding-top: 25px;
+}
+
+#footer div.sns {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+}
+
+#footer div.family {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.layer_bg {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    z-index: 90;
+}
+
+.layer {
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 420px;
+    border: 2px solid #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.layer h2 {
+    color: #000;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.layer p {
+    padding: 20px 10px;
+    text-decoration: underline;
+}
+
+.layer a.close {
+    color: #000;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #000;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.layer a.close span {
+    color: red;
+    font-weight: bold;
 }
