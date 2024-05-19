@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+* {
+    background-color: #ffffff;
+    color: #222328;
+    padding: 0;
+    margin: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cf::before, .cf::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+#wrap {
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+#header {
+    width: 1200px; /* 수정: 너비 변경 */
+    height: 100px;
+    background: grey;
+}
+
+#header .hlogo {
+    width: 200px;
+    height: 100px;
+    float: left;
+    line-height: 100px;
+    position: relative; /* 추가: 포지션 지정 */
+}
+
+#header .hlogo::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    top: 0;
+    left: 100%; /* 수정: left 값을 수정 */
+    height: 100px;
+    background-color: grey;
+}
+
+#header .nav {
+    float: right;
+    width : 600px;
+    margin-top: 28px;  
+}
+
+#header .nav li {
+    position: relative;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+#header .nav ul li a {
+    display: block;
+    width: 150px;
+    font-size: 20px;
+    padding: 10px 0;
+    background-color: wheat;
+    transition: all 0.6s;
+}
+
+
+#header .nav li ul.submenu::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    top: 0;
+    left: -600px;
+    height: 185px;
+    background-color: green;
+}
+
+#header .nav ul li:hover>a{
+    color: #000;
+    background: white;
+}
+
+#header .nav li ul.submenu {
+    background-color: green;
+    position: absolute;
+    left: 0;
+    display: block;
+    height: 185px;
+}
+
+#header .nav li ul.submenu:hover>a {
+    color: #000;
+    background: black;
+}
+
+#header .nav li ul.submenu li {
+    width: 150px;
+}
