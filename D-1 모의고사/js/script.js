@@ -24,7 +24,7 @@ $(function(){
     $(".notice li").eq(0).click(function(){
         $(".popup").show();
     });
-    $(".popup li").click(function(){
+    $(".popup a").click(function(){
         $(".popup").hide();
     });
 });
