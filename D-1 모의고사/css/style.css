@@ -67,7 +67,7 @@
     max-height: 200px;
 }
 
-#header .gnb li:hover .lnb li {
+#header .gnb li .lnb li {
     font-size: 20px;
 }
 
@@ -90,8 +90,224 @@
     box-sizing: border-box;
 }
 
-.sldie {
+#section .slide {
     width: 100%;
-    height: 500px;
+    height: 400px;
+    background: #000;
+    position: relative;
     overflow: hidden;
+}
+
+#section .slide ul {
+    position: absolute;
+}
+
+#section .slide li {
+    height: 400px;
+}
+
+#section .slide .baro {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 190px;
+    height: 360px;
+    background: #0d380d;
+}
+
+#section .slide .baro a {
+    width: 190px;
+    height: 120px;
+    display: block;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
+#section .slide .baro a img {
+    width: 45px;
+    margin-top: 20px;
+}
+
+#section .slide .baro a div {
+    color: #fff;
+}
+
+#section .banner {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#section .banner ul {
+    background: #ebebeb;
+    height: 150px;
+}
+
+#section .banner ul li.icon {
+    width: 170px;
+    height: 150px;
+    float: left;
+    text-align: center;
+}
+
+#section .banner ul li.icon img {
+    width: 100px;
+    margin-top: 20px;
+}
+
+#section .banner ul li.content {
+    width: 950px;
+    height: 150px;
+    float: left;
+}
+
+#section .banner ul li.content h3 {
+    margin-top: 40px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#section .banner ul li.arrow {
+    width: 150px;
+    height: 150px;
+    display: block;
+    float: right;
+    text-align: center;
+}
+
+#section .banner ul li.arrow img {
+    width: 90px;
+    margin-top: 25px;
+}
+
+#section .board {
+    height: 250px;
+    padding: 0 20px;
+}
+
+#section .board .title_box {
+    height: 40px;
+}
+
+#section .board .title_box h2 {
+    height: 40px;
+    width: 130px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    background: #e6e6ee;
+}
+
+#section .board .title_box h2.on {
+    background: #265222;
+}
+
+#section .board .title_box h2.on a {
+    color: #fff;
+}
+
+#section .board .content_box {
+    height: 200px;
+}
+
+.notice li {
+    height: 100%;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.notice li .title {
+    float: left;
+    width: 80%;
+}
+
+.notice li .date {
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+.gallery {
+    display: none;
+}
+
+.gallery li {
+    width: 250px;
+    height: 150px;
+    float: left;
+    background: #000;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+
+.gallery li img {
+    width: 100%;
+}
+
+#footer h1 {
+    width: 200px;
+    height: 100px;
+    background: #000;
+    float: left;
+}
+
+#footer .address {
+    width: 1000px;
+    height: 60px;
+    float: left;
+    margin: 20px 0 0 50px;
+    color: #fff;
+}
+
+#footer .sns {
+    width: 250px;
+    height: 60px;
+    float: right;
+    margin-top: 20px;
+}
+
+#footer .sns a {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: #000;
+    margin-right: 10px;
+}
+
+#footer .sns a img {
+    width: 100%;
+}
+
+.popup {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background: #535a04;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    display: none;
+}
+
+.popup h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.popup div {
+    color: #fff;
+    font-size: 20px;
+}
+
+.popup a {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: #000;
+    color: #fff;
+    padding: 20px 40px;
 }
