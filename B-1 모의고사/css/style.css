@@ -1,0 +1,201 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+#wrap {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+}
+
+#header .hlogo {
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+}
+
+#header .nav {
+    width: 800px;
+    height: 100px;
+    float: right;
+    margin-top: 28px;
+    margin-right: 10px;
+}
+
+#header .nav ul li {
+    float: left;
+    width: 150px;
+    text-align: center;
+    position: relative;
+}
+
+#header .nav ul li a {
+    display: block;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+#header .nav ul li:hover>a {
+    background: blue;
+    color: #ffffff;
+}
+
+#header .nav ul li ul.submenu {
+    display: none;
+    position: absolute;
+    z-index: 50;
+}
+
+#slide {
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+
+#slide .slideList {
+    position: relative;
+}
+
+#slide .slideImg img {
+    /* display: block; */
+}
+
+#contents {
+    width: 100%;
+    height: 200px;
+}
+
+#contents>div {
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+
+#contents .tab_menu {
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#contents .tab_menu .tab_btn li {
+    float: left;
+    width: 95px;
+    text-align: center;
+}
+
+#contents .tab_menu .tab_btn li a {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+#contents .tab_menu .tab_btn li.active a {
+    color: blue;
+}
+
+#contents .tab_cont div {
+    height: 150px;
+}
+
+#contents .tab1 {
+    padding: 0 15px;
+}
+
+#contents .tab1 a {
+    text-align: center;
+    float: left;
+    display: block;
+    padding: 5px;
+    font-size: 15px;
+    border-bottom: 1px solid grey;
+}
+
+#contents .tab1 a span {
+    float: right;
+}
+
+#contents .tab2 {
+    text-align: center;
+}
+
+#contents .tab2 img {
+    width: 115px;
+    display: none;
+}
+
+#contents .banner {
+    width: 400px;
+    float: left;
+    padding: 10px;
+}
+
+.banner a img {
+    width: 30px;
+}
+
+.banner a {
+    float: left;
+}
+
+.shortcut {
+    width: 400px;
+    float: left;
+    padding: 10px;
+}
+
+.shortcut a img {
+    width: 35px;
+    background: blue;
+    margin: 0 20px;
+}
+
+.shortcut a {
+    float: left;
+    text-align: center;
+}
+
+#footer {
+    width: 100%;
+    height: 100px;
+}
+
+#footer .flogo {
+    width: 200px;
+    line-height: 100px;
+}
+
+#footer>div {
+    float: left;
+    height: 100px;
+    background: grey;
+}
+
+#footer .fmenu a {
+    float: left;
+    text-align: center;
+    width: 150px;
+    background: grey;
+}
+
+#footer .copy {
+    text-align: center;
+}
+
+.layer {
+    display: none;
+}
