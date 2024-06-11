@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #333;
+    background: #fff;
+}
+
+body {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+header {
+    width: 1200px;
+    height: 100px;
+}
+
+header .logo{
+    width: 400px;
+    height: 100px;
+    line-height: 100px;     
+    float: left;
+}
+
+header .nav {
+    width: 800px;
+    height: 100px;
+    float: right;
+    position: relative;
+    z-index: 50;
+}
+
+.nav > ul.gnb > li {
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+.nav > ul.gnb > li > a {
+    display: block;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.nav ul.lnb a {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.nav ul.lnb::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    display: none;
+    text-align: center;
+    line-height: 50px;
+    background-color: green;
+}
+
+.slide {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide ul {
+    width: 3600px;
+    height: 100px;
+    position: relative;
+}
+
+.slide ul li {
+    float: left;
+}
+
+.contents {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.contents > div {
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+
+.notice h2 {
+    width: 100px;
+    margin: 10px 10px 0 10px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    text-align: center;
+}
+
+.notice ul {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.notice ul li {
+    padding: 2px 5px;
+}
+
+.notice ul li a span {
+    float: right;
+}
+
+.gallery h2 {
+    text-align: center;
+    width: 100px;
+    margin: 10px 10px 0 10px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.gallery ul {
+    border: 1px solid black;
+    padding: 20px;
+    position: absolute;
+    width: 400px;
+    height: 136px;
+}
+
+.gallery ul li img {
+    float: left;
+    width: 115px;
+    padding: 10px;
+    
+}
+
+.banner h2 {
+    text-align: center;
+    width: 100px;
+    margin: 10px 10px 0 10px;
+    
+}
+
+.banner li {
+    /*  */
+}
+
+.banner li a  {
+    padding : 0 35px;
+}
+
+.banner ul {
+    
+    padding: 20px;
+    position: absolute;
+    width: 400px;
+    height: 136px;
+}
