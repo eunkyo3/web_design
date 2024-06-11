@@ -19,6 +19,7 @@
 #header {
     width: 100%;
     height: 100px;
+    background: blue;
 }
 
 #header .hlogo {
@@ -26,52 +27,84 @@
     height: 100px;
     line-height: 100px;
     float: left;
+    background: blue;
+}
+
+#header .hlogo img {
+    margin-top: 30px;
+    margin-left: 20px;
+    background: blue;
+    
+}
+
+#header .hlogo a {
+    background: blue;
 }
 
 #header .nav {
     width: 800px;
     height: 100px;
     float: right;
-    margin-top: 28px;
-    margin-right: 10px;
+    line-height: 100px;
 }
 
 #header .nav ul li {
     float: left;
-    width: 150px;
+    width: 200px;
+    line-height: 100px;
     text-align: center;
     position: relative;
 }
 
+#header .nav ul li .submenu li {
+    display: none;
+}
+
+#header .nav ul li ul li a{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: deepskyblue;
+}
+
 #header .nav ul li a {
     display: block;
-    padding: 10px 0;
-    font-size: 15px;
+    font-size: 18px;
+    background: blue;
 }
 
 #header .nav ul li:hover>a {
-    background: blue;
+    background: purple;
     color: #ffffff;
 }
 
+#header .nav ul li ul {
+    height: 240px;
+    background: deepskyblue;
+}
+
 #header .nav ul li ul.submenu {
-    display: none;
+    display: block;
     position: absolute;
     z-index: 50;
+    
 }
 
 #slide {
-    overflow: hidden;
     width: 100%;
     height: 300px;
+    overflow: hidden;
 }
 
 #slide .slideList {
+    width: 3600px;
+    height: 300px;
     position: relative;
 }
 
-#slide .slideImg img {
+#slide .slideList .slideImg {
     /* display: block; */
+    float: left;
 }
 
 #contents {
@@ -87,8 +120,17 @@
 
 #contents .tab_menu {
     width: 400px;
+    height: 200px;
     margin: 0 auto;
-    padding: 10px;
+}
+
+.tab_btn {
+    width: 400px;
+    height: 35px;
+}
+
+.tab_btn ul li a{
+    text-align: center;
 }
 
 #contents .tab_menu .tab_btn li {
@@ -102,14 +144,15 @@
     font-weight: bold;
     font-size: 20px;
     text-align: center;
+    margin-top: 10px;
 }
 
-#contents .tab_menu .tab_btn li.active a {
+#contents .tab_menu .tab_btn li.active a{
     color: blue;
 }
 
 #contents .tab_cont div {
-    height: 150px;
+    height: 200px;
 }
 
 #contents .tab1 {
@@ -117,12 +160,12 @@
 }
 
 #contents .tab1 a {
-    text-align: center;
     float: left;
     display: block;
     padding: 5px;
     font-size: 15px;
     border-bottom: 1px solid grey;
+    width: 100%;
 }
 
 #contents .tab1 a span {
@@ -130,12 +173,16 @@
 }
 
 #contents .tab2 {
+    width: 400px;
     text-align: center;
 }
 
-#contents .tab2 img {
+#contents .tab2 a img {
+    float: left;
     width: 115px;
     display: none;
+    margin-top: 20px;
+    padding: 10px;
 }
 
 #contents .banner {
@@ -145,11 +192,12 @@
 }
 
 .banner a img {
-    width: 30px;
+    width: 25px;
 }
 
 .banner a {
     float: left;
+    padding: 10px;
 }
 
 .shortcut {
@@ -167,6 +215,12 @@
 .shortcut a {
     float: left;
     text-align: center;
+    padding: 0 10px;
+}
+
+.tab_menu {
+    width: 100%;
+    height: 200px;
 }
 
 #footer {
@@ -175,8 +229,15 @@
 }
 
 #footer .flogo {
-    width: 200px;
+    width: 300px;
     line-height: 100px;
+}
+.flogo a {
+    background-color: grey;
+}
+#footer .flogo img {
+    margin-top: 30px;
+    background-color: grey;
 }
 
 #footer>div {
@@ -185,17 +246,69 @@
     background: grey;
 }
 
+#footer .fmenu {
+    width: 900px;
+    height: 40px;
+}
+
 #footer .fmenu a {
     float: left;
-    text-align: center;
     width: 150px;
     background: grey;
+    line-height: 40px;
+    display: block;
 }
 
 #footer .copy {
-    text-align: center;
+    width: 900px;
+    float: left;
+    height: 60px;
+}
+
+.copy p {
+    background-color: gray;
 }
 
 .layer {
     display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 200px;
+    background: darkblue;
+}
+
+.layer h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    background: darkblue;
+    padding: 10px;
+}
+
+.layer p {
+    background: darkblue;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 0 30px;
+
+}
+
+.layer a {
+    background: skyblue;
+    color: #ffffff;
+    display: block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.active {
+    color: #333333;
 }
