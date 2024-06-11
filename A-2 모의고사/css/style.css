@@ -21,10 +21,10 @@ header {
     height: 100px;
 }
 
-header .logo{
+header .logo {
     width: 400px;
     height: 100px;
-    line-height: 100px;     
+    line-height: 100px;
     float: left;
 }
 
@@ -36,17 +36,18 @@ header .nav {
     z-index: 50;
 }
 
-.nav > ul.gnb > li {
+.nav>ul.gnb>li {
     width: 200px;
     height: 100px;
     float: left;
+    text-align: center;
 }
-.nav > ul.gnb > li > a {
+
+.nav>ul.gnb>li>a {
     display: block;
     width: 100%;
     height: 100px;
     line-height: 100px;
-    text-align: center;
 }
 
 .nav ul.lnb a {
@@ -56,7 +57,16 @@ header .nav {
     text-align: center;
 }
 
-.nav ul.lnb::after{
+.nav ul.gnb li a:hover {
+    background: yellow;
+}
+
+.nav ul.lnb li a:hover {
+    display: block;
+    background: yellow;
+}
+
+.nav ul.lnb::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -89,7 +99,7 @@ header .nav {
     position: relative;
 }
 
-.contents > div {
+.contents>div {
     width: 400px;
     height: 200px;
     float: left;
@@ -138,28 +148,68 @@ header .nav {
     float: left;
     width: 115px;
     padding: 10px;
-    
+
 }
 
 .banner h2 {
     text-align: center;
     width: 100px;
     margin: 10px 10px 0 10px;
-    
+
 }
 
 .banner li {
     /*  */
 }
 
-.banner li a  {
-    padding : 0 35px;
+.banner li a {
+    padding: 0 35px;
 }
 
 .banner ul {
-    
+
     padding: 20px;
     position: absolute;
     width: 400px;
     height: 136px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: grey;
+    position: relative;
+}
+
+footer .flogo {
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.flogo h1 {
+    background: grey;
+}
+
+.flogo h1 a {
+    background: grey;
+}
+
+.flogo h1 a img {
+    background: grey;
+}
+
+.copy p {
+    float: right;
+    left: -100;
+    float: left;
+}
+
+footer .family {
+    float: right;
+    padding: 10px;
+}
+
+.layer {
+    display: none;
 }
