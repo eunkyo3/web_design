@@ -15,6 +15,14 @@ body {
     height: 700px;
     margin: 0 auto;
 }
+#header {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    background-color: #333;
+    z-index: -2;
+}
 
 header {
     width: 1200px;
@@ -24,8 +32,10 @@ header {
 header .logo {
     width: 400px;
     height: 100px;
-    line-height: 100px;
     float: left;
+}
+header .logo img {
+    margin-top: 30px;
 }
 
 header .nav {
@@ -35,7 +45,31 @@ header .nav {
     position: relative;
     z-index: 50;
 }
+header .gnb {
+    position: relative;
+}
 
+header ul.gnb > li > a {
+    background: grey;
+}
+
+.lnb li a {
+    background: wheat;
+} 
+
+.gnb > .bg, .gnb .lnb{
+    display: none;
+}
+
+.bg {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 1200px;
+    height: 150px;
+    background-color: wheat;
+    z-index: -1;
+}
 .nav>ul.gnb>li {
     width: 200px;
     height: 100px;
@@ -55,14 +89,10 @@ header .nav {
     height: 50px;
     line-height: 50px;
     text-align: center;
-}
-
-.nav ul.gnb li a:hover {
-    background: yellow;
-}
-
-.nav ul.lnb li a:hover {
     display: block;
+}
+
+.nav .gnb li:hover > a{
     background: yellow;
 }
 
@@ -158,10 +188,6 @@ header .nav {
 
 }
 
-.banner li {
-    /*  */
-}
-
 .banner li a {
     padding: 0 35px;
 }
@@ -182,34 +208,82 @@ footer {
 }
 
 footer .flogo {
+    background-color: grey;
+    float: left;
     width: 300px;
     height: 100px;
-    line-height: 100px;
 }
 
-.flogo h1 {
+
+.flogo  a {
     background: grey;
 }
 
-.flogo h1 a {
+.flogo  a img {
     background: grey;
-}
-
-.flogo h1 a img {
-    background: grey;
+    margin-top: 30px;
 }
 
 .copy p {
-    float: right;
-    left: -100;
+    background: grey;
     float: left;
+    color: white;
+    margin-top: 25px;
 }
 
 footer .family {
+    margin-top: 50px;
+    margin-right: 10px;
     float: right;
     padding: 10px;
 }
 
+#footer {
+    position: absolute;
+    top: 600px;
+    width: 100vw;
+    height: 100px;
+    left: 0;
+    background: #333;
+    z-index: -2;
+}
+
+.layer_bg {
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    z-index: 50;
+}
+
 .layer {
     display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 200px;
+    z-index: 55;
+}
+
+.layer h2 {
+    padding: 10px;
+}
+
+.layer p {
+    padding: 5px;
+}
+
+.layer a {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    background: blue;
+    padding: 10px 20px;
+    color: white;
 }
