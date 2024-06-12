@@ -37,7 +37,7 @@ header .hlogo {
     background: black;
 }
 
-header .hlogo img{
+header .hlogo img {
     background: black;
     width: 150px;
     padding: 10px;
@@ -52,6 +52,7 @@ header .hlogo img{
     position: relative;
     background: black;
 }
+
 .gnb {
     position: absolute;
     right: 10px;
@@ -65,16 +66,17 @@ header .hlogo img{
     height: 40px;
     line-height: 40px;
 }
-.gnb > li > a {
+
+.gnb>li>a {
     background-color: aqua;
 }
 
-.gnb li:hover > a {
+.gnb li:hover>a {
     background-color: yellowgreen;
 }
 
-.lnb li{
-    display: none;
+.lnb>li {
+    display: block;
 }
 
 .slide {
@@ -98,7 +100,7 @@ header .hlogo img{
     height: 200px;
 }
 
-.contents > div {
+.contents>div {
     width: 400px;
     height: 200px;
     float: left;
@@ -143,7 +145,7 @@ header .hlogo img{
     color: red;
 }
 
-.gallery img{
+.gallery img {
     display: none;
     width: 115px;
     float: left;
