@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    background: #ffffff;
+    color: #333;
+}
+
+a {
+    display: block;
+}
+
+body {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background: pink;
+}
+
+header .hlogo {
+    width: 200px;
+    height: 100px;
+    background: #333;
+    float: left;
+}
+
+.hlogo a {
+    background: black;
+}
+
+header .hlogo img{
+    background: black;
+    width: 150px;
+    padding: 10px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.nav {
+    float: left;
+    width: 1000px;
+    height: 100px;
+    position: relative;
+    background: black;
+}
+.gnb {
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    text-align: center;
+}
+
+.nav .gnb li {
+    float: left;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+}
+.gnb > li > a {
+    background-color: aqua;
+}
+
+.gnb li:hover > a {
+    background-color: yellowgreen;
+}
+
+.lnb li{
+    display: none;
+}
+
+.slide {
+    overflow: hidden;
+    width: 1200px;
+    height: 300px;
+}
+
+.slideList {
+    width: 3600px;
+    height: 300px;
+}
+
+.slideList img {
+    float: left;
+    display: block;
+}
+
+.contents {
+    width: 1200px;
+    height: 200px;
+}
+
+.contents > div {
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+
+.tab_menu {
+    width: 400px;
+    height: 200px;
+}
+
+.title_box {
+    width: 400px;
+}
+
+.notice {
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+
+.notice ul li {
+    width: 100%;
+    padding: 8px;
+    float: left;
+    border-bottom: 1px solid black;
+}
+
+.notice span {
+    float: right;
+}
+
+.title_box h2 a {
+    padding: 10px 50px;
+    float: left;
+}
+
+.title_box h2 {
+    width: 400px;
+}
+
+.active {
+    color: red;
+}
+
+.gallery img{
+    display: none;
+    width: 115px;
+    float: left;
+    padding: 10px;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+}
+
+.banner h2 {
+    padding: 10px;
+}
+
+.banner a {
+    padding: 13px;
+    border-bottom: 1px solid black;
+}
+
+.banner img {
+    width: 40px;
+    float: left;
+}
+
+.shortcut h2 {
+    padding: 10px;
+}
+
+.shortcut a {
+    float: left;
+}
+
+.shortcut ul li a img {
+    background: blue;
+    padding: 10px;
+    margin: 10px 10px 0 10px;
+    width: 70px;
+    height: 80px;
+}
+
+.shortcut div {
+    width: 70px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: black;
+}
+
+.flogo {
+    width: 300px;
+    height: 100px;
+    float: left;
+}
+
+.flogo img {
+    background: black;
+    height: 100px;
+}
+
+.flogo a {
+    background: black;
+    height: 100px;
+}
+
+.fmenu {
+    width: 900px;
+    text-align: center;
+    float: left;
+    background: black;
+}
+
+.fmenu a {
+    float: left;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+footer p {
+    width: 900px;
+    float: left;
+    color: white;
+    background-color: black;
+}
+
+.layer {
+    position: absolute;
+    display: none;
+    width: 400px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+}
+
+.layer h2 {
+    padding: 10px;
+    background: black;
+    color: yellowgreen;
+}
+
+.layer p {
+    padding: 10px;
+    background: black;
+    color: yellowgreen;
+}
+
+.layer a {
+    position: absolute;
+    color: yellowgreen;
+    width: 60px;
+    padding: 10px;
+    background: blue;
+    right: 10px;
+    bottom: 10px;
+}
