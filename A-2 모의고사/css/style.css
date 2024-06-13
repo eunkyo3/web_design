@@ -15,6 +15,7 @@ body {
     height: 700px;
     margin: 0 auto;
 }
+
 #header {
     position: absolute;
     left: 0;
@@ -34,6 +35,7 @@ header .logo {
     height: 100px;
     float: left;
 }
+
 header .logo img {
     margin-top: 30px;
 }
@@ -45,19 +47,21 @@ header .nav {
     position: relative;
     z-index: 50;
 }
+
 header .gnb {
     position: relative;
 }
 
-header ul.gnb > li > a {
+header ul.gnb>li>a {
     background: grey;
 }
 
 .lnb li a {
     background: wheat;
-} 
+}
 
-.gnb > .bg, .gnb .lnb{
+.gnb>.bg,
+.gnb .lnb {
     display: none;
 }
 
@@ -70,6 +74,7 @@ header ul.gnb > li > a {
     background-color: wheat;
     z-index: -1;
 }
+
 .nav>ul.gnb>li {
     width: 200px;
     height: 100px;
@@ -92,7 +97,7 @@ header ul.gnb > li > a {
     display: block;
 }
 
-.nav .gnb li:hover > a{
+.nav .gnb li:hover>a {
     background: yellow;
 }
 
@@ -215,11 +220,11 @@ footer .flogo {
 }
 
 
-.flogo  a {
+.flogo a {
     background: grey;
 }
 
-.flogo  a img {
+.flogo a img {
     background: grey;
     margin-top: 30px;
 }
@@ -254,7 +259,7 @@ footer .family {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     z-index: 50;
 }
