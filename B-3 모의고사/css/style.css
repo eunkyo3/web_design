@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    background: #fff;
+    color: #333;
+}
+
+a {
+    display: block;
+}
+body {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+#header {
+    position: absolute;
+    width: 100vw;
+    height: 100px;
+    background: pink;
+    left: 0;
+    z-index: -2;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    background: pink;
+}
+
+.hlogo img{
+    background-color: pink;
+    width: 300px;
+    float: left;
+}
+
+.nav {
+    width: 800px; 
+    height: 60px; 
+    float: right; 
+    margin-top: 20px;
+    margin-right: 20px;
+    position: relative;
+    z-index: 50;
+}
+
+.nav li {
+    width: 200px; 
+    height: 60px; 
+    float: left; 
+    text-align: center; 
+    line-height: 60px; 
+    font-size: 20px 
+}
+
+.nav li a {
+    color: black;  
+    display: block;
+}
+
+.nav .gnb li:hover > a {
+    background: #0e7a77;
+    color: white;
+}
+
+.nav li .lnb {
+    width: 200px; 
+    background: #1ca8a6; 
+    height: 0px; 
+    overflow: hidden; 
+    transition: 0.3s; 
+}
+
+.nav li:hover .lnb {
+    height: 240px;
+}
+
+.slide {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide ul {
+    position: absolute;
+}
+
+.slide ul li {
+    height: 300px;
+}
+
+.contents {
+    width: 100%;
+    height: 200px;
+}
+
+.contents > div {
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+
+.notice h2 {
+    padding: 10px;
+}
+
+.notice .cont {
+    float: left;
+}
+
+.cont a {
+    padding: 5px;
+    border-bottom: 1px solid grey;
+}
+
+.cont {
+    width: 400px;
+}
+
+.cont a span {
+    float: right;
+}
+
+.gallery h2 {
+    padding: 10px;
+}
+
+.gallery ul li img {
+    width: 115px;
+    float: left;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.banner h2 {
+    padding: 10px;
+}
+
+.banner ul li a {
+    margin-left: 10px;
+}
+
+.banner ul li a img {
+    width: 30px;
+}
+
+#footer {
+    position: absolute;
+    left: 0;
+    height: 100px;
+    background: pink;
+    z-index: -2;
+    width: 100vw;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: pink;
+}
+
+.flogo {
+    background-color: pink;
+    width: 400px;
+    float: left;
+}
+
+.flogo a {
+    height: 100px;
+    background: pink;
+}
+
+.flogo img {
+    background: pink;
+    height: 100px;
+}
+
+.sns {
+    margin-right: 30px;
+}
+
+.sns li {
+    padding: 20px 10px;
+    float: right;
+    background: pink;
+}
+
+.copy p {
+    background: pink;
+    float: left;
+    margin-top: 25px;
+}
+
+.sns img {
+    width: 50px;
+    height: 50px;
+}
+
+.layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+    background: brown;
+    display: none;
+}
+
+.layer h2 {
+    text-align: center;
+    padding: 10px;
+    background-color: red;
+    color: black;
+}
+
+.layer p {
+    padding: 5px;
+    background: brown;
+    color: white;
+}
+
+.layer a {
+    background: yellowgreen;
+    font-size: 20px;
+    color: black;
+    width: 60px;
+    text-align: center;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
