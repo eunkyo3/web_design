@@ -46,48 +46,52 @@ header .hlogo img {
 }
 
 .nav {
-    float: left;
-    width: 1000px;
-    height: 100px;
+    width: 800px;
+    height: 60px;
+    float: right;
     position: relative;
-    background: black;
+    z-index: 50;
+    margin-top: 40px;
+    margin-right: 40px;
 }
 
-.gnb {
-    position: absolute;
-    right: 10px;
-    top: 50px;
-    text-align: center;
-}
-
-.nav .gnb li {
-    float: left;
+.nav li {
     width: 200px;
-    height: 40px;
-    line-height: 40px;
+    height: 60px;
+    float: left;
+    text-align: center;
+    line-height: 60px;
 }
 
-.gnb>li>a {
-    background-color: aqua;
+.gnb > li > a {
+    background: green;
+    color: yellow;
 }
 
-.gnb li:hover>a {
-    background-color: yellowgreen;
+.lnb li a {
+    background: pink;
 }
 
-.lnb>li {
-    display: block;
+.gnb li:hover > a{
+    background: blue;
+    color: white;
+}
+
+.lnb {
+    width: 200px;
+    height: 0;
+    overflow: hidden;
+}
+
+.gnb li:hover .lnb{
+    height: 180px;
 }
 
 .slide {
     overflow: hidden;
     width: 1200px;
     height: 300px;
-}
-
-.slideList {
-    width: 3600px;
-    height: 300px;
+    position: relative;
 }
 
 .slideList img {
