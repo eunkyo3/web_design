@@ -57,40 +57,37 @@ header {
     border-bottom: 1px solid black;
 }
 
-.upslide {
-    width: calc(100vw - 200px);
+section .upslide {
+    width: 100%;
     height: 400px;
-    float: left;
-    position: relative;
+    background: #ccc;
+}
+
+section .contents {
+    width: 100%;
+    height: 250px;
 }
 
 .slide {
-    width: calc(100% - 240px);
+    width: calc(100% - 230px);
     height: 400px;
-    overflow: hidden;
     float: left;
+    position: relative;
+    overflow: hidden;
 }
 
 .slide ul {
+    position: absolute;
     width: 300%;
     height: 400px;
+    background: rgb(89, 2, 2);
 }
 
-.slide ul img {
-    width: 100%;
-    height: 400px;
-}
-
-.slide li {
-    width: calc(100% / 3);
-    height: 400px;
+.slide ul li {
     float: left;
+    width: calc(100% / 3);
 }
 
-.banner {
-    width: 230px;
-    height: 400px;
-    background: yellow;
-    float: right;
-    position: absolute;
+.slide ul li img {
+    width: 100%;
 }
