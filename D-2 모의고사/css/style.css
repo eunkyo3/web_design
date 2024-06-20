@@ -95,6 +95,11 @@ section .contents {
     width: calc(100% / 3);
 }
 
+.slide ul li img {
+    width: 100%;
+    height: 400px;
+}
+
 .banner {
     width: 230px;
     height: 400px;
@@ -165,7 +170,7 @@ section .contents {
 }
 
 .gallery img {
-    width: 200px;
+    width: 30%;
     float: left;
     padding: 20px;
 }
