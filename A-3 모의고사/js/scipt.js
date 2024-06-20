@@ -1,6 +1,7 @@
 $(function(){
     let current = 0;
     setInterval(function(){
+        $(".slide ul").delay(2000);
         let index = (current+1)%3;
         $(".slide ul").find("li").eq(current).fadeOut();
         $(".slide ul").find("li").eq(index).fadeIn();
