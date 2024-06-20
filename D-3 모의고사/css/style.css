@@ -194,13 +194,13 @@ header h1 {
 .gallery {
     width: 100%;
     float: left;
+    display: none;
 }
 
 .gallery img{
-    width: 25%;
+    width: 15%;
     float: left;
     padding: 10px;
-    display: none;
 }
 
 footer {
