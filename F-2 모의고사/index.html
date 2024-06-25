@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,45 +9,51 @@
     <script src="./js/jquery-3.7.0.min.js"></script>
     <script src="./js/script.js"></script>
 </head>
+
 <body>
     <header>
-        <h1><a href="#"><img src="./images/logo.jpg" alt="hlogo"></a></h1>
-        <div class="nav">
+        <div class="hlogo">
+            <a href="#"><img src="./images/hlogo.jpg" alt="hlogo"></a>
+        </div>
+        <nav>
             <ul class="gnb">
-                <li><a href="#">교육/소개</a>
+                <div class="bg">
+
+                </div>
+                <li><a href="#">조회</a>
                     <ul class="lnb">
-                        <li><a href="#">대학</a></li>
-                        <li><a href="#">대학원</a></li>
-                        <li><a href="#">대학현황</a></li>
-                        <li><a href="#">대학상징</a></li>
+                        <li><a href="#">계좌조회</a></li>
+                        <li><a href="#">거래내역조회</a></li>
+                        <li><a href="#">휴먼계좌 조회</a></li>
+                        <li><a href="#">수표/어음 조회</a></li>
                     </ul>
                 </li>
-                <li><a href="#">연구</a>
+                <li><a href="#">이체</a>
                     <ul class="lnb">
-                        <li><a href="#">연구성과</a></li>
-                        <li><a href="#">연구현황</a></li>
-                        <li><a href="#">연구기관</a></li>
-                        <li><a href="#">연구지원</a></li>
+                        <li><a href="#">계좌이체</a></li>
+                        <li><a href="#">다계좌이체</a></li>
+                        <li><a href="#">자동이체</a></li>
+                        <li><a href="#">예약이체</a></li>
                     </ul>
                 </li>
-                <li><a href="#">입학</a>
+                <li><a href="#">공과금</a>
                     <ul class="lnb">
-                        <li><a href="#">대학</a></li>
-                        <li><a href="#">대학원</a></li>
-                        <li><a href="#">편입학</a></li>
-                        <li><a href="#">글로벌</a></li>
+                        <li><a href="#">지로/생활요금</a></li>
+                        <li><a href="#">지방세</a></li>
+                        <li><a href="#">국세/관세</a></li>
+                        <li><a href="#">벌칙금/벌과금</a></li>
                     </ul>
                 </li>
-                <li><a href="#">대학생활</a>
+                <li><a href="#">외환</a>
                     <ul class="lnb">
-                        <li><a href="#">뉴스</a></li>
-                        <li><a href="#">학생활동</a></li>
-                        <li><a href="#">캠퍼스활동</a></li>
-                        <li><a href="#">학사일정</a></li>
+                        <li><a href="#">금리</a></li>
+                        <li><a href="#">환율/외화예금</a></li>
+                        <li><a href="#">글로벌랭킹</a></li>
+                        <li><a href="#">외화송금</a></li>
                     </ul>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
     <section class="slide">
         <ul>
@@ -56,62 +63,92 @@
         </ul>
     </section>
     <section class="contents">
-        <div class="shortcut">
+        <div class="baro">
             <ul>
-                <li><img src="./images/baro1.png" alt="baro1"></li>
-                <li><img src="./images/baro2.png" alt="baro2"></li>
-                <li><img src="./images/baro3.png" alt="baro3"></li>
-                <li><img src="./images/baro4.png" alt="baro4"></li>
-                <li><img src="./images/baro5.png" alt="baro5"></li>
+                <li>
+                    <img src="./images/baro1.png" alt="baro1">
+                    <div>LINK1</div>
+                </li>
+                <li>
+                    <img src="./images/baro2.png" alt="baro2">
+                    <div>LINK2</div>
+                </li>
+                <li>
+                    <img src="./images/baro3.png" alt="baro3">
+                    <div>LINK3</div>
+                </li>
+                <li>
+                    <img src="./images/baro4.png" alt="baro4">
+                    <div>LINK4</div>
+                </li>
+                <li>
+                    <img src="./images/baro5.png" alt="baro5">
+                    <div>LINK5</div>
+                </li>
             </ul>
         </div>
         <div class="banner">
             <ul>
-                <li><a href="#"><img src="./images/icon.png" alt="icon"></a></li>
-                <li>
-                    <h3>소제목</h3>
-                    <div>내용내용내용</div>
+                <li class="icon"><img src="./images/icon.png" alt="icon"></li>
+                <li class="cont">
+                    <h3>"편리한 금융 혁명, 오픈뱅킹의 세계"</h3>
+                    <div>오픈뱅킹은 보다 개인화된 서비스와 혁신적인 금융 솔루션을 제공하여 여러분의 삶을 더욱 편리하고 효율적으로 만들어줍니다. 지금 오픈뱅킹과 함께 미래의 금융을 경험해 보세요.
+                    </div>
                 </li>
-                <li><a href="#"><img src="./images/icon_arrow.png" alt="arrow"></a></li>
+                <li class="arrow"><img src="./images/arrow.png" alt="arrow"></li>
             </ul>
         </div>
-        <div class="notice">
-            <h2>공지사항</h2>
-            <ul>
-                <li><a href="#">내용<span>날짜</span></a></li>
-                <li><a href="#">내용<span>날짜</span></a></li>
-                <li><a href="#">내용<span>날짜</span></a></li>
-                <li><a href="#">내용<span>날짜</span></a></li>
-            </ul>
-        </div>
-        <div class="gallery">
-            <h2>갤러리</h2>
-            <ul>
-                <li><img src="./images/gallery1.jpg" alt="gallery1"></li>
-                <li><img src="./images/gallery2.jpg" alt="gallery2"></li>
-                <li><img src="./images/gallery3.jpg" alt="gallery3"></li>
-            </ul>
+        <div class="tab">
+            <div class="tab_btn">
+                <ul>
+                    <li><a href="#" class="on">공지사항</a></li>
+                    <li><a href="#">갤러리</a></li>
+                </ul>
+            </div>
+            <div class="notice">
+                <ul>
+                    <li><a href="#" class="layerpopup">웹디자인 기능사 풀어보아요<span>2030-12-15</span></a></li>
+                    <li><a href="#">실기합격률 95% 유지중<span>2030-12-15</span></a></li>
+                    <li><a href="#">쉽게 쉽게 풀어봅시다<span>2030-12-15</span></a></li>
+                </ul>
+            </div>
+            <div class="gallery">
+                <ul>
+                    <li><img src="./images/gallery1.jpg" alt="gallery1"></li>
+                    <li><img src="./images/gallery2.jpg" alt="gallery2"></li>
+                    <li><img src="./images/gallery3.jpg" alt="gallery3"></li>
+                </ul>
+            </div>
         </div>
     </section>
     <footer>
+        <div class="flogo">
+            <a href="#"><img src="./images/flogo.jpg" alt="flogo"></a>
+        </div>
+        <div class="fmenu">
+            <ul>
+                <li><a href="#">서비스 이용약관</a></li>
+                <li><a href="#">개인정보 보호</a></li>
+                <li><a href="#">개인정보 수집</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+            </ul>
+        </div>
         <div class="copy">
             경기도 성남시 분당구 돌마로 46 (광천빌딩 5층)<br>
             그린컴퓨터에서 ui/ux 웹디자인+웹퍼블리셔 수업중 (강쌤)
         </div>
-        <div class="sns">
-            <ul>
-                <li><img src="./images/sns1.png" alt="sns1"></li>
-                <li><img src="./images/sns2.png" alt="sns2"></li>
-                <li><img src="./images/sns3.png" alt="sns3"></li>
-            </ul>
-        </div>
-        <div class="family">
-            <select name="family" class="family">
-                <option value="#">패밀리사이트</option>
-                <option value="#">패패패패패패</option>
-                <option value="#">밀밀밀밀밀밀</option>
-            </select>
-        </div>
     </footer>
+    <div class="modal">
+        <div class="layer">
+            <h2>"오픈뱅킹 팝업 이벤트: 디지털 금융 혁명의 시작"</h2>
+            <p>
+                "안녕하세요! 오픈뱅킹 팝업 이벤트에 참여해 주셔서 감사합니다.<br>
+                우리는 디지털 금융 혁명의 시작을 함께 경험하고자 합니다.<br>
+                오픈뱅킹을 통해 언제 어디서나 편리하게 금융 서비스를 이용할 수 있는 새로운 시대의 문을 여는 여정에 함께해주세요!"
+            </p>
+            <a href="#">닫기</a>
+        </div>
+    </div>
 </body>
+
 </html>
